@@ -6,6 +6,8 @@ import reviewsReducer from "../reducers/reducer";
 const sagaMiddleware = createSagaMiddleware();
 export type RootState = ReturnType<typeof store.getState>;
 
+export type AppDispatch = typeof store.dispatch;
+
 const store = configureStore({
   reducer: reviewsReducer,
   middleware: (getDefaultMiddleware) =>

@@ -14,6 +14,7 @@ const ReviewsTable: React.FC = () => {
   const [platformFilter, setPlatformFilter] = useState("");
   const [ratingFilter, setRatingFilter] = useState({ min: 0, max: 5 });
   const [sortOption, setSortOption] = useState("date-desc");
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     dispatch(fetchReviews());
@@ -24,7 +25,8 @@ const ReviewsTable: React.FC = () => {
       (review) =>
         (!platformFilter || review.platform === platformFilter) &&
         review.rating >= ratingFilter.min &&
-        review.rating <= ratingFilter.max
+        review.rating <= ratingFilter.max &&
+        review.text.toLowerCase().includes(searchQuery.toLowerCase())
     )
     .sort((a, b) => {
       if (sortOption === "date-desc")
@@ -46,6 +48,8 @@ const ReviewsTable: React.FC = () => {
         setRatingFilter={setRatingFilter}
         sortOption={sortOption}
         setSortOption={setSortOption}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
       />
       <ReviewsTableDisplay reviews={filteredAndSortedReviews} />
     </div>
