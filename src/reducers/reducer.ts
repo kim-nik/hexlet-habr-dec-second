@@ -1,5 +1,5 @@
-import { SetReviewsAction, SET_REVIEWS } from "./actions";
-import { Review } from "./types";
+import { SET_REVIEWS, SetReviewsAction } from "../actions/actions";
+import { Review } from "../types";
 
 type State = {
   reviews: Review[];

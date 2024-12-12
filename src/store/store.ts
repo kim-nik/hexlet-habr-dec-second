@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
-import reviewsReducer from "./reducer";
-import { rootSaga } from "./sagas";
+import { rootSaga } from "../sagas/sagas";
+import reviewsReducer from "../reducers/reducer";
 
 const sagaMiddleware = createSagaMiddleware();
 export type RootState = ReturnType<typeof store.getState>;

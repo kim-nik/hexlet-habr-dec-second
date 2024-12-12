@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchReviews } from "../actions";
+import { fetchReviews } from "../actions/actions";
 
-import { RootState } from "../store";
+import { RootState } from "../store/store";
 import "./ReviewsTable.css";
 import Filters from "./Filters";
 import ReviewsTableDisplay from "./ReviewsTableDisplay";
