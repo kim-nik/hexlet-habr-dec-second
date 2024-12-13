@@ -26,7 +26,7 @@ pnpm install
 Для работы приложения необходим локальный сервер для хранения отзывов. Запустите сервер с помощью команды:
 
 ```bash
-pnpm json-server --watch db.json --port 3000
+json-server --watch src/data/reviews.json --port 3000
 ```
 
 Данные будут доступны по адресу: [http://localhost:3000/reviews](http://localhost:3000/reviews)
