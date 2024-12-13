@@ -1,13 +1,5 @@
 # Отзывы - Проект №2
 
-## Ссылки
-
-- [Мой GitHub](https://github.com/kim-nik/)
-- [Моя Хабр Карьера](https://career.habr.com/nik-kim-nik)
-- [Ссылка на ивент](https://special.habr.com/)
-- [Первый проект](https://github.com/kim-nik/hexlet-habr-dec)
-- [Третий проект](https://github.com/kim-nik/hexlet-habr-dec-third)
-
 ---
 
 ## Описание проекта
@@ -48,3 +40,13 @@ pnpm dev
 ```
 
 Проект будет доступен по адресу: [http://localhost:5173](http://localhost:5173)
+
+
+## Ссылки
+
+- [Мой GitHub](https://github.com/kim-nik/)
+- [Моя Хабр Карьера](https://career.habr.com/nik-kim-nik)
+- [Ссылка на ивент](https://special.habr.com/)
+- [Первый проект](https://github.com/kim-nik/hexlet-habr-dec)
+- [Третий проект](https://github.com/kim-nik/hexlet-habr-dec-third)
+
