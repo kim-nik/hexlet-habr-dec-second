@@ -3,7 +3,7 @@ import "./ReviewsTable.css";
 import { Review } from "../types";
 
 import { useDispatch } from "react-redux";
-import { deleteReview } from "../actions/actions";
+import { deleteReview, fetchReviews } from "../actions/actions";
 import { AppDispatch } from "../store/store";
 
 interface ReviewsTableDisplayProps {
@@ -79,14 +79,16 @@ const ReviewsTableDisplay: React.FC<ReviewsTableDisplayProps> = ({
           </tr>
         </thead>
         <tbody>
-          {currentReviews.map((review) => (
-            <tr key={review.id}>
+          {currentReviews.map((review, index) => (
+            <tr key={review.id! + index}>
               <td>{review.platform}</td>
               <td>{review.rating}</td>
               <td>{new Date(review.date).toLocaleString()}</td>
               <td>{review.text}</td>
               <td>
-                <button onClick={() => handleDelete(review.id)}>Удалить</button>
+                <button onClick={() => handleDelete(review.id!)}>
+                  Удалить
+                </button>
               </td>
             </tr>
           ))}

@@ -11,7 +11,6 @@
 .filters {
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
 }
 
 .filter-dropdown {
@@ -31,6 +30,8 @@
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  padding: 10px;
+  text-align: center;
 }
 
 .reviews-table {
@@ -48,4 +49,80 @@
 
 .reviews-table th {
   background-color: #f4f4f4;
+}
+
+.search-input {
+  padding: 10px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.reload-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #0000cc;
+  }
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+.pagination-controls {
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+
+  & button {
+    color: white;
+
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    &:hover {
+      background-color: #0000cc;
+    }
+  }
+}
+
+.links {
+  margin: 10px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #005bb5;
+  text-decoration: underline;
 }

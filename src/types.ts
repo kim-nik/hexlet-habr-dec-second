@@ -1,5 +1,5 @@
 export interface Review {
-  id: number;
+  id?: number;
   platform: string;
   rating: number;
   date: string;
